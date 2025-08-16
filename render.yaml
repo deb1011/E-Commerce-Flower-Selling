@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: happy-petals
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: DB_HOST
+        value: your-mysql-host
+      - key: DB_NAME
+        value: shop_db
+      - key: DB_USER
+        value: your-username
+      - key: DB_PASS
+        value: your-password
